@@ -1,22 +1,13 @@
 All our code is in this git, and our website [SPNPS](http://www.spnps.cn/) is also deployed from this file. By modifying the fn parameter in the “~\backend\getPred.py”, you can debug the complete process of the website. The following contents will describe the key parts in detail:
-1.	Atom mapping
-   
-The input of the neural network must be SMILES after atomic mapping. The preprocessing needs python environment with dependencies:
+##	Atom mapping
+The input of the neural network must be SMILES after atomic mapping. The preprocessing needs python environment with dependencies: Rdkit, Rxnmapper
 
-Rdkit, Rxnmapper
-
-In this git, we provide a script to convert the step in “~\backend\data\prodata.py” by command:
-
-python prodata.py
-
+In this git, we provide a script to convert the step in “~\backend\data\prodata.py” by command: python prodata.py 
 where you just need to input the filename in main function. Files are organized as one reaction per line.
 
-3.	Network Training and Test
-
+##	Network Training and Test
 The network is trained in two steps:
-
-2.1	Reaction Center:
-
+1 Reaction Center:
 The following commands need to be execute in directory: “~\backend\data\core_wln_global”.
 Train command:
 python nntrain_direct.py --train ../data/train.txt.proc --hidden 300 --depth 3 --save_dir model-fine-tune-ori
@@ -29,9 +20,8 @@ where “test.txt.proc” is your own test reactions after atom mapping, ckpt-31
 predictions for training samples by:
 python nntest_direct.py --test ../data/train.txt.proc --hidden 300 --depth 3 --model model-fine-tune-3130 --checkpoint ckpt-3130  --verbose 1 --detailed 1 > model-fine-tune-3130/train.cbond_detailed
 
-2.2	Candidate Scoring:
-The following commands need to be execute in directory:
-“~\backend\data\ rank_diff_wln”.
+2 Candidate Scoring:
+The following commands need to be execute in directory: “~\backend\data\ rank_diff_wln”.
 
 Train command:
 python nntrain_direct_useScores.py --train ../data/train.txt.proc --cand ../core_wln_global/model-fine-tune-3130/train.cbond_detailed --hidden 500 --depth 3 --ncand 150 --ncore 16 --save_dir model-fine-tune-ori
@@ -39,11 +29,13 @@ python nntrain_direct_useScores.py --train ../data/train.txt.proc --cand ../core
 Test command:
 python nntest_direct_useScores.py --test ../data/test.txt.proc --cand ../core_wln_global/model-fine-tune-3130/test.cbond_detailed --hidden 500 --depth 3 --ncand 1500 --ncore 16 --model model-fine-tune-ori --checkpoint ckpt-13800  --verbose 1 > model-fine-tune-ori/test.cbond_detailed_13800
 where ckpt-13800 is one of the trained models for this setp, you need to test and find the best one before executing the next step.
+
 After you decided the best model, you can generate the predictions by:
 python eval_by_smiles.py --gold ../data/test.txt.proc --pred model-fine-tune-ori/ test.cbond_detailed_13800  --bonds_as_doubles true
+
 Then the prediction would generate in “rank_diff_wln” folder. Now, you can evaluate the accuracy of your model on your test set. After fine-tuning, you can get the final prediction model adapted to your data set. The model will be used for subsequent virtual product predictions
 
-5.	CFM-ID Installation and Requirement
+##	CFM-ID Installation and Requirement
 CFM-ID is provided as a Docker container for users, so a working Docker installation on Windows or Linux is a prerequisite. To install Docker on Windows, Linux, or Mac, follow the instructions at: https://docs.docker.com/get-docker/. After verifying that you have a running Docker installation, pull the latest CFM-ID container: 
 docker pull wishartlab/cfmid
 
@@ -56,10 +48,11 @@ config_file: The filename of the configuration parameters of the CFM model.
 annotate_fragments: The default value of 0 indicates that the fragment information in the output spectra is ignored.
 output_file: The filename of the output spectra (in-silico database, ISDB) file.
 suppress_exceptions: The default value of 0 indicates that most exceptions are suppressed, allowing the program to return normally even in cases where it fails to produce a result.
+
 Example:
 sudo docker run --rm=true -v $(pwd):/cfmid/public/ -d wishartlab/cfmid:latest sh -c "cd /cfmid/public/; cfm-predict cfm_input.txt 0.001 param_output-1.log param_config.txt 0 cfmid_output.mgf 0"
 
-6.	Tremolo Download and Usage
+##	Tremolo Download and Usage
 Tremolo is a program running on Linux, freely available at: http://proteomics.ucsd.edu/Software/Tremolo/#Downloads.
 Command line:
 ./convert <input_file>.mgf
