@@ -1,0 +1,196 @@
+/* only small desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+  #hero-area .contents .head-title {
+    font-size: 40px;
+  }
+  .services-item .services-content h3 a {
+    font-size: 14px;
+  }
+  .text-wrapper h3 {
+    font-size: 16px;
+  }
+  .counter-section .counter .icon {
+    margin-right: 8px;
+  }
+}
+
+/* tablets */
+@media (max-width: 991px) {
+  .section-title {
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+  .services-item .services-content h3 a {
+    font-size: 14px;
+  }
+  .services-item {
+    margin-bottom: 20px;
+  }
+  #pricing-table .title h3 {
+    font-size: 14px;
+  }
+}
+
+/* only small tablets */
+@media (min-width: 768px) and (max-width: 991px) {
+  .section-title {
+    font-size: 26px;
+    margin-bottom: 30px;
+  }
+  .text-wrapper {
+    padding: 30px;
+  }
+  .services-item .services-content h3 a {
+    font-size: 16px;
+  }
+  .text-holder {
+    margin-top: 30px;
+  }
+  .text-wrapper h3 {
+    font-size: 20px;
+  }
+  .services-item {
+    margin-bottom: 20px;
+  }
+  .counter-section .counter p {
+    font-size: 14px;
+  }
+  #pricing-table .title h3 {
+    font-size: 14px;
+  }
+  .team-item {
+    padding: 10px;
+  }
+  .team-item .content h2 {
+    font-size: 15px;
+  }
+  .footer-area .footer-titel {
+    margin-top: 30px;
+  }
+  .contact-right-area {
+    margin-top: 30px;
+  }
+  #pricing-table #active-tb {
+    -webkit-transform: scale3d(1, 1, 1);
+    -moz-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+  .padding-none {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .subscribes p {
+    font-size: 20px;
+  }
+  .error-content .error-message h2 {
+    font-size: 150px;
+  }
+  #sidebar {
+    margin-top: 30px;
+  }
+}
+
+/* mobile or only mobile */
+@media (max-width: 767px) {
+  .section-title {
+    font-size: 22px;
+    margin-bottom: 30px;
+  }
+  .navbar-brand img {
+    margin: 5px 0;
+  }
+  #hero-area .contents {
+    padding: 100px 0px 60px 0px;
+  }
+  #hero-area .contents .head-title {
+    font-size: 20px;
+    line-height: 36px;
+    margin-bottom: 15px;
+  }
+  #hero-area .contents p {
+    font-size: 13px;
+  }
+  #hero-area .contents .btn {
+    margin: 5px 10px 10px 0px;
+  }
+  .text-holder {
+    margin-top: 30px;
+  }
+  #about .sec-title h3 {
+    font-size: 15px;
+    line-height: 28px;
+  }
+  #cta .cta-info {
+    padding: 0;
+  }
+  #cta .cta-info h3 {
+    font-size: 15px;
+    line-height: 36px;
+  }
+  .services-item {
+    margin-bottom: 20px;
+  }
+  .text-wrapper {
+    width: 100%;
+    padding: 30px;
+  }
+  .text-wrapper h3 {
+    font-size: 18px;
+  }
+  .controls .btn {
+    margin: 0;
+    font-size: 11px;
+    padding: 7px 14px;
+    text-transform: capitalize;
+  }
+  .subscribes p {
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .contact-form-area {
+    padding: 40px 0px;
+  }
+  .contact-right-area {
+    margin-top: 30px;
+  }
+  .footer-right-contact .single-contact {
+    margin: 10px 7px;
+    padding: 3px 45px;
+  }
+  .footer-area .footer-titel {
+    margin-top: 30px;
+  }
+  .page-header .breadcrumb {
+    float: left;
+  }
+  .blog-post .post-content {
+    padding: 20px 15px;
+  }
+  .blog-post .post-content .post-title {
+    font-size: 20px;
+  }
+  .blog-post .meta .meta-part a {
+    font-size: 12px;
+  }
+  #sidebar {
+    margin-top: 30px;
+  }
+  #pricing-table #active-tb {
+    -webkit-transform: scale3d(1, 1, 1);
+    -moz-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+  .error-content .error-message {
+    padding-bottom: 25px;
+  }
+  .error-content .error-message h2 {
+    font-size: 90px;
+  }
+  .error-content .error-message h3 {
+    font-size: 15px;
+  }
+  .padding-none {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}

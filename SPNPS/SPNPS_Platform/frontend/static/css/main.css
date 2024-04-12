@@ -1,0 +1,530 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700");
+html {
+  overflow-x: hidden;
+}
+
+body {
+  background: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: 'Roboto', sans-serif;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-font-smoothing: subpixel-antialiased;
+  color: #666;
+  line-height: 25px;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4 {
+  font-size: 38px;
+  font-weight: 700;
+  font-family: 'Roboto', sans-serif;
+}
+
+a {
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}
+
+a a:focus {
+  outline: none;
+}
+
+p {
+  font-weight: 400;
+  font-family: 'Roboto', sans-serif;
+  margin: 0px;
+  font-size: 14px;
+}
+
+ul, ol {
+  list-style: outside none none;
+  margin: 0;
+  padding: 0;
+}
+
+ul li, ol li {
+  list-style: none;
+}
+
+
+.section-padding {
+  padding: 60px 0;
+}
+
+.section-title {
+  color: #252525;
+  font-size: 38px;
+  text-align: center;
+  letter-spacing: 1px;
+  line-height: 1;
+  margin-bottom: 48px;
+  padding: 0 10px;
+  position: relative;
+}
+
+.div-padding {
+  padding: 30px 0;
+}
+
+
+/* ==========================================================================
+   Hero Area
+========================================================================== */
+.hero-area-bg {
+  background: url(../img/hero-area.jpg) no-repeat;
+  background-size: cover;
+}
+
+#hero-area {
+  color: #fff;
+  overflow: hidden;
+  position: relative;
+}
+
+#hero-area .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+#hero-area .contents {
+  padding: 175px 0px 120px;
+}
+
+#hero-area .contents h5 {
+  font-size: 50px;
+}
+
+#hero-area .contents .head-title {
+  color: #fff;
+  font-size: 50px;
+  line-height: 48px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+#hero-area .contents p {
+  font-size: 14px;
+  color: #fff;
+  font-weight: 400;
+  line-height: 30px;
+  margin-bottom: 25px;
+}
+
+#hero-area .contents .btn {
+  margin: 20px 10px 10px 0px;
+  padding: 14px 26px;
+  border-radius: 50px;
+  text-transform: uppercase;
+}
+
+/* ==========================================================================
+   About 
+========================================================================== */
+#about .img-thumb img {
+  border-radius: 4px;
+  border: 8px solid #fff;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
+}
+
+#about .sec-title {
+  margin-top: 15px;
+  position: relative;
+}
+
+#about .sec-title h3 {
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+#about .text-box {
+  position: relative;
+}
+
+#about .text-box .s-list li {
+  margin-bottom: 10px;
+  color: #666;
+}
+
+#about .text-box .s-list li span {
+  color: #ED5437;
+  margin-right: 5px;
+}
+
+
+
+#cta {
+  background: url(../img/bg-2.jpg) center;
+  overflow: hidden;
+  position: relative;
+}
+
+#cta .overlay {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+#cta .cta-info {
+  padding: 60px;
+}
+
+#cta .cta-info h3 {
+  color: #fff;
+  font-size: 30px;
+  margin-bottom: 30px;
+  line-height: 40px;
+}
+
+#cta .cta-info .btn {
+  margin: 20px 10px 10px 0px;
+  padding: 14px 26px;
+  border-radius: 50px;
+  text-transform: uppercase;
+}
+
+
+.subscribes {
+  background: #f7f7f7;
+}
+
+.subscribes h2 {
+  font-size: 36px;
+  color: #484848;
+  line-height: 44px;
+  font-weight: 500;
+  text-align: center;
+  /* margin-bottom: 30px; */
+}
+
+.subscribes h3 {
+  font-size: 28px;
+  color: #484848;
+  line-height: 44px;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+
+.subscribe {
+  margin-top: 5px;
+  width: 100%;
+  position: relative;
+}
+
+.subscribe .form-control {
+  float: left;
+  width: 100%;
+  border-radius: 50px;
+  position: relative;
+  height: 50px;
+  border: 1px solid #ED5437;
+}
+
+.subscribe .btn {
+  padding: 14px 26px;
+  border-radius: 50px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+
+.subscribes img {
+  max-width: 128px;
+  max-height: 128px;
+  height: auto;
+}
+
+
+.rts p {
+  font-size: 14px;
+  color: #099bfc;
+  line-height: 44px;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+
+.nps table {
+  table-layout: fixed;
+  word-break: break-all;
+  overflow: auto;
+  margin: auto;
+}
+
+
+/* ==========================================================================
+   About 
+========================================================================== */
+.uploader
+{
+	border: 2px dotted #A5A5C7;
+	width: 80%;
+	color: #92AAB0;
+	text-align: center;
+	vertical-align: middle;
+	padding-top: 30px;
+	margin-bottom: 10px;
+	font-size: 200%;
+  margin: 0 auto;
+
+	cursor: default;
+
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.uploader div.or {
+	font-size: 50%;
+	font-weight: bold;
+	color: #C0C0C0;
+	padding: 10px;
+}
+
+.uploader .desk_1{
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.uploader .btn {
+  width: 88%;
+  background-color: #5a7bc2;
+  color: #fff;
+  box-shadow: 2px 2px 2px #888888;
+}
+
+
+#am {
+  width: 80%;
+  text-align: center;
+  vertical-align: middle;
+  margin: 0 auto;
+  padding-bottom: 30px;
+}
+
+#am .btn {
+  width: 88%;
+  background-color: #5a7bc2;
+  color: #fff;
+  box-shadow: 2px 2px 2px #888888;
+}
+
+
+.tips {
+  width: 88%;
+  padding-bottom: 60px;
+  vertical-align: middle;
+  margin: 0 auto;
+}
+
+.tips h4{
+  font-size: 36px;
+  text-align: center;
+}
+
+
+.btn-common {
+  background-color: #ED5437;
+  position: relative;
+  z-index: 1;
+  color: #fff;
+}
+
+.btn-border {
+  color: #fff;
+  background-color: transparent;
+  border: 1px solid #fff;
+  text-decoration: none;
+}
+
+
+.btn-border:hover {
+  border: 1px solid #fff;
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.btn-border:focus {
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+
+.btn-common:hover {
+  color: #fff;
+  background-color: #ED5437;
+  box-shadow: 0 6px 22px rgba(0, 0, 0, 0.1);
+  transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -webkit-transition: all .2s ease-in-out;
+}
+
+.btn-common:focus {
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+
+.download {
+  margin: 20px 10px 10px 0px;
+  padding: 14px 26px;
+  border-radius: 50px;
+  text-transform: capitalize;
+  background-color: transparent;
+  border: 1px solid #5a7bc2;
+  text-align: center;
+  margin: 30px auto;
+}
+
+.download a:focus {
+  text-decoration: none;
+}
+
+
+.output h3 {
+  font-size: 28px;
+  color: #484848;
+  line-height: 44px;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.output p {
+  font-size: 24px;
+  color: #1f1f1f;
+  line-height: 44px;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+
+/* ScrollToTop */
+a.back-to-top {
+  display: none;
+  position: fixed;
+  bottom: 18px;
+  right: 15px;
+  text-decoration: none;
+}
+
+a.back-to-top i {
+  display: block;
+  font-size: 22px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  color: #fff;
+  background: #ED5437;
+  border-radius: 30px;
+  text-align: center;
+  transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.14), 0 4px 8px rgba(0, 0, 0, 0.28);
+}
+
+a.back-to-top:hover, a.back-to-top:focus {
+  text-decoration: none;
+}
+
+
+#copyright {
+  background: #333;
+}
+
+#copyright p {
+  line-height: 42px;
+  color: #fff;
+  text-align: center;
+  margin: 0;
+}
+
+#copyright p a {
+  color: #fff;
+}
+
+#copyright p a:hover {
+  color: #ED5437;
+}
+
+
+.box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.box .box-item {
+  width: 100px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+
+.box .box-item:nth-of-type(4n) {
+  margin-right: 0;
+}
+
+
+
+.loading {
+  width: 3px; height:3px;
+  margin: 0 auto;
+  border-radius: 100%;                      /* 圆角 */
+  box-shadow: 0 -10px 0 1px #333,           /* 上, 1px 扩展 */
+              10px 0px #333,                /* 右 */    
+              0 10px #333,                  /* 下 */
+              -10px 0 #333,                 /* 左 */
+                            
+              -7px -7px 0 .5px #333,        /* 左上, 0.5px扩展 */
+              7px -7px 0 1.5px #333,        /* 右上, 1.5px扩展 */                    
+              7px 7px #333,                 /* 右下 */
+              -7px 7px #333;                /* 左下 */
+}
+
+.spin {
+  animation: spin 1s steps(8) infinite;
+}
+@keyframes spin {
+  from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}

@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>SPNPS</title>
+  <link rel="icon" href="../static/img/logo.ico" type="img/x-ico" />
+
+  <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.js"></script>
+  <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
+  integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <!-- 可选的 Bootstrap 主题文件（一般不用引入） -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap-theme.min.css"
+    integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+  <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"
+    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
+  </script>
+
+  <link rel="stylesheet" href="../static/css/main.css">
+
+  <!-- <script src="../static/js/jquery-min.js"></script>
+  <script src="../static/js/popper.min.js"></script>
+  <script src="../static/js/bootstrap.min.js"></script>
+  <script src="../static/js/jquery.counterup.min.js"></script>
+  <script src="../static/js/waypoints.min.js"></script>
+  <script src="../static/js/owl.carousel.min.js"></script>
+  <script src="../static/js/wow.js"></script>
+  <script src="../static/js/jquery.easing.min.js"></script>  
+  <script src="../static/js/jquery.slicknav.js"></script> -->
+
+  <!-- <link rel="stylesheet" type="text/css" href="../static/css/bootstrap.min.css" > -->
+  <link rel="stylesheet" type="text/css" href="../static/fonts/line-icons.css">
+  <!-- <link rel="stylesheet" type="text/css" href="../static/css/slicknav.css">
+  <link rel="stylesheet" type="text/css" href="../static/css/owl.carousel.min.css"> -->
+  <!-- <link rel="stylesheet" type="text/css" href="../static/css/animate.css"> -->
+  <!-- <link rel="stylesheet" type="text/css" href="../static/css/responsive.css"> -->
+
+
+</head>
+
+
+<body>
+  <!-- header start -->
+  <div id="hero-area" class="hero-area-bg">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 col-sm-12">
+          <div class="contents text-center">
+            <h2 class="head-title wow fadeInUp">SPNPS - Smart Prediction System for Natural Products Structure </h2>
+            <p class="fadeInUp wow" data-wow-delay="0.2s">It represents the first proposed AI-based structure prediction system for natural products in plants<br>
+                Include building blocks detection, AI structure prediction, and predicted structure selection<br>
+                102 structures were predicted by SPNPS that may exist!<br>
+            </p>
+            <!-- <div class="header-button wow fadeInUp" data-wow-delay="1s">
+              <a href="#" class="btn btn-common" style="color: #fff;">Demo</a>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- header End -->
+
+  <!-- About Section Start -->
+  <section id="about" class="section-padding">
+    <div class="container">
+      <h2 class="section-title">Introduction to SPNPS</h2>
+      <div class="row">
+        <div class="col-lg-5 col-md-12 col-sm-12 col-xs-12">
+          <div class="img-thumb text-center">
+            <img src="../static/img/about.jpg" alt="">
+          </div>
+        </div> 
+        <div class="col-lg-7 col-md-12 col-sm-12 col-xs-12">
+          <div class="text-holder">
+            <div class="sec-title">
+              <h3>Smart Prediction System for Natural Products Structure</h3>
+              <p style="text-align:justify;"> The SPNPS consists of three modules: </p>
+            </div>
+            <div class="row text-box mt-4">
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                  <ul class="s-list mb-2">
+                    <li style="text-align:justify"><span class="lni-check-mark-circle"></span>Build an AI structure prediction module by the deep neural network. The structures and corresponding building blocks of a class of NPs were used as the training set for AI program to learn the underlying biosynthetic rules; </li>
+                    <li style="text-align:justify"><span class="lni-check-mark-circle"></span>According to the literature or preliminary experiments, determine the building blocks contained in a related target plant, and use the above AI program to predict the NPs that these building blocks may generate (called virtual NPs); </li>
+                    <li style="text-align:justify"><span class="lni-check-mark-circle"></span>Collect the experimental LC-MS/MS data of the extract of the target plant, which was compared with the calculated MS/MS data of the virtual NPs. Then screen out the NPs that may actually exist in plants (called predicted NPs).</li>
+                  </ul>
+                </div>
+            </div>
+          </div>
+        </div>   
+      </div>
+    </div>
+  </section>
+  <!-- About Section End -->
+
+
+  <!-- Call To Action Start -->
+  <section id="cta">
+    <div class="overlay">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="cta-info text-center">
+              <h3>A Demo for SPNPS <br>We provide two ways to interact.</h3>
+              <div class="header-button wow fadeInUp" data-wow-delay="1s">
+                <button id="way1" class="btn btn-common">Text Input</button>
+                <button id="way2" class="btn btn-border">Files Upload</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Call To Action End -->
+
+  <!-- -->
+  <section class="subscribes section-padding">
+    <div class="container">
+      <div class="col-md-12">
+        <div class="row">
+          <div class="tips">
+            <h4>Getting started</h4>
+            <ul>
+              <li style="text-align:justify">1.Upload a MS file. (eg: <a href="../static/files/TR-PTAs-UPLC-0105.mgf">.mgf</a>)</li>
+              <li style="text-align:justify">2.Type a reaction with Text Input (eg: 'OC1=C(C(CC(C)C)=O)C(O)=C(C)C(O)=C1C.CC2=CC=C(C(C)C)C=C2' ) or upload a txt file with Files Upload. (eg: <a href="../static/files/test.txt" download="test.txt">.txt</a>)</li>
+              <li style="text-align:justify">When you get the results, you can click buttons to download the virtual NPS and the final predicted NPS, respectively.</li>
+            </ul>
+          </div>
+          <div class="browser" id="am">
+            <button class="btn" onclick="ambtn.click()">Choose a MS File</button>
+            <input type="file" name="files[]" id='ambtn' style="display: none;" accept=".mgf">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="textbox" class="way" style="display: block;">
+      <div class="container">
+        <div class="row justify-content-md-center">
+          <div class="col-md-12 col-sm-12">
+            <h2>Text Input</h2>
+            <p style="text-align: center; padding-bottom: 30px; font-size: 24px;">(for single reaction)</p>
+            <!-- 输入反应 -->
+            <div class="subscribe">
+              <!-- <input type="hidden">  -->
+              <input class="form-control" type="text" id="keywords" name="keywords" placeholder="Type or paste (Ctrl+V) your text here.">
+              <!-- <input type="submit" name="button" id="button" class="btn btn-common" onclick="enter()"> -->
+              <button class="btn btn-common" type="submit" onclick="enter()">Submit</button>
+            </div>
+            <br>
+            <br>
+            
+            <div id="loading1" style="display: none;" class="text-center">
+              <div class="loading spin"></div>
+              <br>
+              <p>Due to the computation of the in-silico MS/MS spectra, you may need to wait 30s for the results…</p></p>
+            </div>
+            <!-- 下载 -->
+            <div class="text-center" id="nps-a" style="display: none;">
+              <button class="download"><a href="" download="pred_result.txt" id="nps_file">click to download virtual NPS</a></button>
+            </div>
+            <!-- 预测 -->
+            <div id="result-show" style="display: none;">
+              <h3 id="computed_1" style="padding-top: 40px; padding-bottom: 10px;">Reaction you entered</h3>
+              <div id="rts" class="rts text-center">
+                
+              </div>
+              <h3 id="computed" style="padding-top: 40px; padding-bottom: 10px;">Virtual Natural Products</h3>
+              <div id="nps" class="nps text-center">
+                <!-- <div id="nps_file"></div> -->
+                <table border="1" cellspacing="20" cellpadding="0">
+                  <tr id="row1" class="four"></tr>
+                  <tr id="row2" class="four"></tr>
+                  <tr id="row3" class="four"></tr>
+                  <tr id="row4" class="four"></tr>
+                  <tr id="row5" class="four"></tr>
+                  <tr id="row6" class="four"></tr>
+                  <tr id="row7" class="four"></tr>
+                  <tr id="row8" class="four"></tr>
+                </table>
+              </div>
+              <h3 id="MS" style="padding-top: 40px; padding-bottom: 10px;">Predicted Natural Products</h3>
+              <div id="pnps" class="nps text-center">
+                <table border="1" cellspacing="20" cellpadding="0">
+                  <tr id="pnp1" class="pnp"></tr>
+                  <tr id="pnp2" class="pnp"></tr>
+                  <tr id="pnp3" class="pnp"></tr>
+                </table>
+              </div>
+              <div class="text-center" id="pnps-a">
+                <button class="download"><a href="" download="spnps.out" id="spnps_file">click to download predicted NPS</a></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div id="fileupload" class="way" style="display: none;">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h2>Files Upload</h2>
+            <p style="text-align: center; padding-bottom: 30px; font-size: 24px;">(for batch processing)</p>
+            <div id="drag-and-drop-zone" class="uploader">
+              <div class="desk_1">Drag & Drop Files Here</div>
+              <div id="desk_2" class="or">or</div>
+              <div class="browser" id="browser">
+                <button class="btn" onclick="filebtn.click()">Choose File</button>
+                <input type="file" name="files[]" id='filebtn' style="display: none;" accept=".txt">
+              </div>
+            </div>
+ 
+            <div id="loading2" style="display: none;" class="text-center">
+              <div class="loading spin"></div>
+              <br>
+              <p>Due to the computation of the in-silico MS/MS spectra, you may need to wait a while depending on the length of your upload…</p></p>
+            </div>
+            <div class="text-center" id="nps-load-a" style="display: none;">
+              <button class="download"><a href="" download="pred_result.txt" id="load_nps" >click to download virtual NPS</a></button>
+            </div>
+          </div>
+        </div>
+        
+        <div class="row" id="loader-result-show" style="display: none;">
+          <div class="col-md-12 col-sm-12">
+            <h3 id="loader-computed_1" style="padding-top: 40px; padding-bottom: 10px;">First Reaction you Upload</h3>
+            <div id="loader-rts" class="rts text-center">
+              
+            </div>
+            <h3 id="loader-computed" style="padding-top: 40px; padding-bottom: 10px;">Virtual Natural Products for First Reaction</h3>
+            <div id="nps-load" class="nps text-center">
+              <table border="1" cellspacing="20" cellpadding="0">
+                <tr id="loader-row1" class="loader-four"></tr>
+                <tr id="loader-row2" class="loader-four"></tr>
+                <tr id="loader-row3" class="loader-four"></tr>
+                <tr id="loader-row4" class="loader-four"></tr>
+                <tr id="loader-row5" class="loader-four"></tr>
+                <tr id="loader-row6" class="loader-four"></tr>
+                <tr id="loader-row7" class="loader-four"></tr>
+                <tr id="loader-row8" class="loader-four"></tr>
+              </table>
+            </div>
+
+            <h3 id="loader-MS" style="padding-top: 40px; padding-bottom: 10px;">Predicted Natural Products</h3>
+            <div id="loader-pnps" class="nps text-center">
+              <table border="1" cellspacing="20" cellpadding="0">
+                <tr id="loader-pnp1" class="loader-pnp"></tr>
+                <tr id="loader-pnp2" class="loader-pnp"></tr>
+                <tr id="loader-pnp3" class="loader-pnp"></tr>
+              </table>
+            </div>
+            <div class="text-center" id="loader-pnps-a">
+              <button class="download"><a href="" download="spnps.out" id="loader-spnps">click to download predicted NPS</a></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </section>
+  <!-- End -->
+
+  <section id="copyright">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <p>Copyright © 2023 <a href="https://beian.miit.gov.cn" target='_blank'>粤ICP备2023009371号-1</a></p>
+        </div>
+      </div>
+    </div>
+  </section> 
+
+  <!-- Go to Top Link -->
+  <a href="" class="back-to-top">
+    <i class="lni-arrow-up"></i>
+  </a>
+
+  <script type="text/javascript" src="../static/js/main.js"></script>
+
+</body>

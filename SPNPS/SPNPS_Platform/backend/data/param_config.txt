@@ -1,0 +1,32 @@
+lambda 0.0
+em_converge_thresh 0.01
+ga_converge_thresh 0.001
+model_depth 2
+spectrum_depth 2
+spectrum_weight 1
+allow_frag_detours 1
+num_em_restarts 3
+em_no_progress_count 2
+em_max_iterations 100
+#####config for adam#######
+ga_method 2
+starting_step_size 0.001
+ending_step_size 0.00025
+ga_adam_beta_1 0.9
+ga_adam_beta_2 0.999
+###########################
+ga_max_iterations 20
+ionization_mode 1
+ga_sampling_method 4
+ga_minibatch_nth_size 1
+collected_all_used_idx 1
+########NNConfig###########
+theta_function 2
+theta_nn_hlayer_num_nodes 128
+theta_nn_hlayer_num_nodes 128
+theta_nn_layer_act_func_ids 2
+theta_nn_layer_act_func_ids 2
+theta_nn_layer_act_func_ids 0
+nn_layer_dropout_probs 0.1
+nn_layer_dropout_probs 0.1
+nn_layer_dropout_probs 0
