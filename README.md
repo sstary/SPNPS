@@ -16,9 +16,7 @@ where “train.txt.proc” is your own training reactions after atom mapping.
 
 Test command:
 python nntest_direct.py --test ../data/test.txt.proc --hidden 300 --depth 3 --model model-fine-tune-3130 --checkpoint ckpt-3130  --verbose 1 --detailed 1 > model-fine-tune-3130/test.cbond_detailed
-where “test.txt.proc” is your own test reactions after atom mapping, ckpt-3130 is one of the trained models, you need to test and find the best one before executing the next step. When you decide the best model for this step, you need to generate the reaction center 
-
-predictions for training samples by:
+where “test.txt.proc” is your own test reactions after atom mapping, ckpt-3130 is one of the trained models, you need to test and find the best one before executing the next step. When you decide the best model for this step, you need to generate the reaction center predictions for training samples by:
 python nntest_direct.py --test ../data/train.txt.proc --hidden 300 --depth 3 --model model-fine-tune-3130 --checkpoint ckpt-3130  --verbose 1 --detailed 1 > model-fine-tune-3130/train.cbond_detailed
 
 2 Candidate Scoring:
